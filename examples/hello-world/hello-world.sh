@@ -1,17 +1,17 @@
-# To run the program, put the code in `hello-world.go` and
-# use `go run`.
-$ go run hello-world.go
-hello world
+# Para rodar o programa, coloque o c&oacute;digo no arquivo `ola-mundo.go` 
+# e use `go run`.
+$ go run ola-mundo.go
+Olá mundo
 
-# Sometimes we'll want to build our programs into
-# binaries. We can do this using `go build`.
-$ go build hello-world.go
+# &Agrave;s vezes, queremos transformar nosso c&oacute;digo fonte
+# em programa execut&aacute;vel. Podemos fazer isso usando `go build`.
+$ go build ola-mundo.go
 $ ls
-hello-world	hello-world.go
+ola-mundo	ola-mundo.go
 
-# We can then execute the built binary directly.
-$ ./hello-world
-hello world
+# Agora, n&oacute;s podemos executar o programa diretamente.
+$ ./ola-mundo
+Olá mundo
 
-# Now that we can run and build basic Go programs, let's
-# learn more about the language.
+# Agora que podemos executar e construir progamas b&aacute;sicos 
+# em Go, vamos aprender mais sobre a linguagem.
