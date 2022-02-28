@@ -1,5 +1,5 @@
-// Em Go, _variáveis_ são explicitamente declaradas e 
-// usadas pelo compilador. Por exemplo, verificar 
+// Em Go, _variáveis_ são explicitamente declaradas e
+// usadas pelo compilador. Por exemplo, verificar
 // type-correctness de chamada de funções.
 
 package main
@@ -20,15 +20,15 @@ func main() {
 	var d = true
 	fmt.Println(d)
 
-	// As variáveis declaradas sem uma inicialização 
-	// correspondente terão _valor zero_. Por exemplo, 
+	// As variáveis declaradas sem uma inicialização
+	// correspondente terão _valor zero_. Por exemplo,
 	// o valor zero para um `int` é `0`.
 
 	var e int
 	fmt.Println(e)
 
 	// A sintaxe `:=` é uma abreviação para declarar
-	// e inicializar uma variável. Por exemplo, 
+	// e inicializar uma variável. Por exemplo,
 	// `var f string = "apple"`.
 	f := "apple"
 	fmt.Println(f)
