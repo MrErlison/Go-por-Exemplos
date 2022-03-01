@@ -20,4 +20,6 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/sso v1.4.0 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.7.0 // indirect
 	github.com/aws/smithy-go v1.8.0 // indirect
+	github.com/extemporalgenome/slug v0.0.0-20150414033109-0320c85e32e0 // indirect
+	golang.org/x/text v0.3.7 // indirect
 )
