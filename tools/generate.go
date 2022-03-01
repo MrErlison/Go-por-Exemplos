@@ -18,6 +18,7 @@ import (
 	"github.com/alecthomas/chroma/lexers"
 	"github.com/alecthomas/chroma/styles"
 
+	"github.com/extemporalgenome/slug"
 	"github.com/russross/blackfriday/v2"
 )
 
@@ -266,11 +267,12 @@ func parseExamples() []*Example {
 			fmt.Printf("Processing %s [%d/%d]\n", exampleName, i+1, len(exampleNames))
 		}
 		example := Example{Name: exampleName}
-		exampleID := strings.ToLower(exampleName)
-		exampleID = strings.Replace(exampleID, " ", "-", -1)
-		exampleID = strings.Replace(exampleID, "/", "-", -1)
-		exampleID = strings.Replace(exampleID, "'", "", -1)
-		exampleID = dashPat.ReplaceAllString(exampleID, "-")
+		//exampleID := strings.ToLower(exampleName)
+		//exampleID = strings.Replace(exampleID, " ", "-", -1)
+		//exampleID = strings.Replace(exampleID, "/", "-", -1)
+		//exampleID = strings.Replace(exampleID, "'", "", -1)
+		//exampleID = dashPat.ReplaceAllString(exampleID, "-")
+		exampleID := slug.Slug(exampleName)
 		example.ID = exampleID
 		example.Segs = make([][]*Seg, 0)
 		sourcePaths := mustGlob("examples/" + exampleID + "/*")
