@@ -9,12 +9,12 @@
       onkeydown = (e) => {
           {{if .PrevExample}}
           if (e.key == "ArrowLeft") {
-              window.location.href = '{{.PrevExample.ID}}';
+              window.location.href = '{{.PrevExample.ID}}.html';
           }
           {{end}}
           {{if .NextExample}}
           if (e.key == "ArrowRight") {
-              window.location.href = '{{.NextExample.ID}}';
+              window.location.href = '{{.NextExample.ID}}.html';
           }
           {{end}}
       }
@@ -39,7 +39,7 @@
       {{end}}
       {{if .NextExample}}
       <p class="next">
-        Pr&oacute;ximo exemplo: <a href="{{.NextExample.ID}}">{{.NextExample.Name}}</a>.
+        Pr&oacute;ximo exemplo: <a href="{{.NextExample.ID}}.html">{{.NextExample.Name}}</a>.
       </p>
       {{end}}
 {{ template "footer" }}
