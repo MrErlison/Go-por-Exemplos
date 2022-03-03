@@ -8,9 +8,9 @@ func main() {
 
 	// Aqui está um exemplo básico.
 	if 7%2 == 0 {
-		fmt.Println("7 is par")
+		fmt.Println("7 é par")
 	} else {
-		fmt.Println("7 is ímpar")
+		fmt.Println("7 é ímpar")
 	}
 
 	// Você pode ter uma instrução `if` sem o `else`
@@ -18,8 +18,8 @@ func main() {
 		fmt.Println("8 é divisível por 4")
 	}
 
-	// Uma instrução pode preceder condicionais; 
-	// quaisquer variáveis declaradas nessa instrução 
+	// Uma instrução pode preceder condicionais;
+	// quaisquer variáveis declaradas nessa instrução
 	// estão disponíveis em todas as ramificações.
 	if num := 9; num < 0 {
 		fmt.Println(num, "é negativo")
