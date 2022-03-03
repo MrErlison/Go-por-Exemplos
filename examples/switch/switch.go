@@ -27,12 +27,12 @@ func main() {
 	// o `case` opcional `default` neste exemplo.
 	switch time.Now().Weekday() {
 	case time.Saturday, time.Sunday:
-		fmt.Println("It's the weekend")
+		fmt.Println("É final de semana")
 	default:
-		fmt.Println("It's a weekday")
+		fmt.Println("É dia de semana")
 	}
 
-	// `switch` sem uma expressão é um caminho 
+	// `switch` sem uma expressão é um caminho
 	// alternativo para expressar a lógica `if/else`.
 	// Aqui nós também mostramos como as expressões
 	// `case` podem ser não constantes.
