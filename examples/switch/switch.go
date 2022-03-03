@@ -1,5 +1,5 @@
-// _Switch statements_ express conditionals across many
-// branches.
+// As instruções _switch_ expressam condições através
+// de diversas ramificações.
 
 package main
 
@@ -10,21 +10,21 @@ import (
 
 func main() {
 
-	// Here's a basic `switch`.
+	// Aqui tem um `switch` básico.
 	i := 2
-	fmt.Print("Write ", i, " as ")
+	fmt.Print("Escreva ", i, " com ")
 	switch i {
 	case 1:
-		fmt.Println("one")
+		fmt.Println("um")
 	case 2:
-		fmt.Println("two")
+		fmt.Println("dois")
 	case 3:
-		fmt.Println("three")
+		fmt.Println("três")
 	}
 
-	// You can use commas to separate multiple expressions
-	// in the same `case` statement. We use the optional
-	// `default` case in this example as well.
+	// Você pode usar vírgulas para separar múltiplas
+	// expressões na mesma instrução `case`. Nós usamos
+	// o `case` opcional `default` neste exemplo.
 	switch time.Now().Weekday() {
 	case time.Saturday, time.Sunday:
 		fmt.Println("It's the weekend")
@@ -32,32 +32,34 @@ func main() {
 		fmt.Println("It's a weekday")
 	}
 
-	// `switch` without an expression is an alternate way
-	// to express if/else logic. Here we also show how the
-	// `case` expressions can be non-constants.
+	// `switch` sem uma expressão é um caminho 
+	// alternativo para expressar a lógica `if/else`.
+	// Aqui nós também mostramos como as expressões
+	// `case` podem ser não constantes.
 	t := time.Now()
 	switch {
 	case t.Hour() < 12:
-		fmt.Println("It's before noon")
+		fmt.Println("É antes do meio dia")
 	default:
-		fmt.Println("It's after noon")
+		fmt.Println("É depois do meio dia")
 	}
 
-	// A type `switch` compares types instead of values.  You
-	// can use this to discover the type of an interface
-	// value.  In this example, the variable `t` will have the
-	// type corresponding to its clause.
+	// Um tipo `switch` compara tipos ao invés de valores
+	// Você pode usar isso para descobrir o tipo de valor
+	// de uma interface. No exemplo, a variável `t` terá
+	// o tipo correspondente à sua cláusula.
+
 	whatAmI := func(i interface{}) {
 		switch t := i.(type) {
 		case bool:
-			fmt.Println("I'm a bool")
+			fmt.Println("Eu sou um bool")
 		case int:
-			fmt.Println("I'm an int")
+			fmt.Println("Eu sou um int")
 		default:
-			fmt.Printf("Don't know type %T\n", t)
+			fmt.Printf("Eu não sou do tipo %T\n", t)
 		}
 	}
 	whatAmI(true)
 	whatAmI(1)
-	whatAmI("hey")
+	whatAmI("Oi")
 }

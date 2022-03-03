@@ -1,7 +1,7 @@
 $ go run switch.go 
-Write 2 as two
-It's a weekday
-It's after noon
-I'm a bool
-I'm an int
-Don't know type string
+Escreva 2 com dois
+É um final de semana
+É antes do meio dia
+Eu sou um bool
+Eu sou um int
+Eu não sou do tipo string
