@@ -21,7 +21,7 @@ jobs:
       - name: Build
         run: |
           tools/build
-      - name: Deploy to gobyexample-pt
+      - name: Deploy to gobyexample-ptbr
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
