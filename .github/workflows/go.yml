@@ -22,6 +22,7 @@ jobs:
         run: |
           tools/build
           cp .github/workflows/README.md ./public
+          
       - name: Deploy to gobyexample-ptbr
         uses: peaceiris/actions-gh-pages@v3
         with:
