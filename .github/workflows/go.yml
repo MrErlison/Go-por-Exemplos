@@ -1,4 +1,4 @@
-name: Gobyexample action
+name: Go por Exemplo
 on:
   push:
     branches:
@@ -21,7 +21,6 @@ jobs:
       - name: Build
         run: |
           tools/build
-          cp .github/workflows/README.md ./public
       - name: Deploy to gobyexample-pt
         uses: peaceiris/actions-gh-pages@v3
         with:
