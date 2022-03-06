@@ -1,5 +1,6 @@
-// _Slices_ are a key data type in Go, giving a more
-// powerful interface to sequences than arrays.
+// _Slices_ são um tipo de dados no Go, dando uma
+// `interface` mais poderosa para sequências do 
+// que `array`.
 
 package main
 
@@ -7,22 +8,24 @@ import "fmt"
 
 func main() {
 
-	// Unlike arrays, slices are typed only by the
-	// elements they contain (not the number of elements).
-	// To create an empty slice with non-zero length, use
-	// the builtin `make`. Here we make a slice of
-	// `string`s of length `3` (initially zero-valued).
+	// Ao contrário dos `arrays`, os `slices` tem seus
+	// tipos apenas pelos elementos que contêm (não pelo
+	// número de elementos). Para criar um `slice` vazio
+	// com comprimento diferente de zero, use construtor
+	// `make`. Aqui fazemos os `slices` de `string` de 
+	// comprimento 3 (inicialmente com valor zero).
+
 	s := make([]string, 3)
 	fmt.Println("emp:", s)
 
-	// We can set and get just like with arrays.
+	// Podemos definir e obter exatamente como o `array`.
 	s[0] = "a"
 	s[1] = "b"
 	s[2] = "c"
-	fmt.Println("set:", s)
+	fmt.Println("seet", s)
 	fmt.Println("get:", s[2])
 
-	// `len` returns the length of the slice as expected.
+	// `len` retorna o tamanho do `slice`.
 	fmt.Println("len:", len(s))
 
 	// In addition to these basic operations, slices
@@ -31,39 +34,50 @@ func main() {
 	// returns a slice containing one or more new values.
 	// Note that we need to accept a return value from
 	// `append` as we may get a new slice value.
+	
+	// Além dessas operações básicas, os `slices` 
+	// suportam muito mais, o que os tornam mais
+	// rico do que o `array`. 
+	// Um deles é o `append`, que retorna um `slice` 
+	// contendo um ou mais novos valores. Observe que
+	// precisamos aceitar um valor de retorno do 
+	// `append`, bem como podemos obter um novo valor
+	// do `slice`.
+
 	s = append(s, "d")
 	s = append(s, "e", "f")
 	fmt.Println("apd:", s)
 
-	// Slices can also be `copy`'d. Here we create an
-	// empty slice `c` of the same length as `s` and copy
-	// into `c` from `s`.
+	// `Sllices` também podem ser copiadas. Aqui criamos
+	// um `slice` vazio `c` do mesmo comprimento que `s` 
+	// e copiamos para `c` o `s`.
 	c := make([]string, len(s))
 	copy(c, s)
 	fmt.Println("cpy:", c)
 
-	// Slices support a "slice" operator with the syntax
-	// `slice[low:high]`. For example, this gets a slice
-	// of the elements `s[2]`, `s[3]`, and `s[4]`.
+	// `Slices` suportam um operador “slice” com a 
+	// sintaxe `slice[low:high]`. Por exemplo, isso obtém
+	// um `slice` dos elementos s[2], s[3] e s[4].
 	l := s[2:5]
 	fmt.Println("sl1:", l)
 
-	// This slices up to (but excluding) `s[5]`.
+	// Esse `slice` corta até (excluindo) `s[5]`.
 	l = s[:5]
 	fmt.Println("sl2:", l)
 
-	// And this slices up from (and including) `s[2]`.
+	// E esse `slice` parte de (incluindo) `s[2]`.
 	l = s[2:]
 	fmt.Println("sl3:", l)
 
-	// We can declare and initialize a variable for slice
-	// in a single line as well.
+	// Também podemos declarar e inicializar uma variável
+	// `slice` em uma única linha.
 	t := []string{"g", "h", "i"}
 	fmt.Println("dcl:", t)
 
-	// Slices can be composed into multi-dimensional data
-	// structures. The length of the inner slices can
-	// vary, unlike with multi-dimensional arrays.
+	// `Slices` podem ser compostos em estruturas de 
+	// dados multidimensionais. O comprimento dos 
+	// `slices` internos pode variar, ao contrário dos
+	// `array` multidimensionais.
 	twoD := make([][]int, 3)
 	for i := 0; i < 3; i++ {
 		innerLen := i + 1
