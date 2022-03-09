@@ -7,7 +7,7 @@ If/Else
 Switch
 Arrays
 Slices
-#Maps
+Maps
 #Range
 #Functions
 #Multiple Return Values
