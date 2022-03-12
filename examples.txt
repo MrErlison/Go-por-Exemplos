@@ -9,7 +9,7 @@ Arrays
 Slices
 Maps
 Range
-#Functions
+Funções
 #Multiple Return Values
 #Variadic Functions
 #Closures
