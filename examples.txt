@@ -10,7 +10,7 @@ Slices
 Maps
 Range
 Funções
-#Multiple Return Values
+Múltiplos valores de retorno
 #Variadic Functions
 #Closures
 #Recursion
