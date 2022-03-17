@@ -11,7 +11,7 @@ Maps
 Range
 Funções
 Múltiplos valores de retorno
-#Variadic Functions
+Funções Variádicas
 #Closures
 #Recursion
 #Pointers
