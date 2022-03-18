@@ -12,7 +12,7 @@ Range
 Funções
 Múltiplos valores de retorno
 Funções Variádicas
-#Closures
+Closures
 #Recursion
 #Pointers
 #Strings and Runes
