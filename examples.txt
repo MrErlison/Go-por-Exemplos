@@ -13,7 +13,7 @@ Funções
 Múltiplos valores de retorno
 Funções Variádicas
 Closures
-#Recursion
+Recursividade
 #Pointers
 #Strings and Runes
 #Structs
