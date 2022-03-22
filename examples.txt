@@ -14,7 +14,7 @@ Múltiplos valores de retorno
 Funções Variádicas
 Closures
 Recursividade
-#Pointers
+Ponteiros
 #Strings and Runes
 #Structs
 #Methods
