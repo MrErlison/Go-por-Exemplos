@@ -16,7 +16,7 @@ Closures
 Recursividade
 Ponteiros
 Strings e Runes
-#Structs
+Estruturas
 #Methods
 #Interfaces
 #Embedding
