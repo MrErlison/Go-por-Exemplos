@@ -1,4 +1,4 @@
-$ go run strings-and-runes.go
+$ go run strings-e-runes.go
 Len: 18
 e0 b8 aa e0 b8 a7 e0 b8 b1 e0 b8 aa e0 b8 94 e0 b8 b5 
 Rune count: 6

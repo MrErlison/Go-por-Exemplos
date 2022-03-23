@@ -15,7 +15,7 @@ Funções Variádicas
 Closures
 Recursividade
 Ponteiros
-#Strings and Runes
+Strings e Runes
 #Structs
 #Methods
 #Interfaces
