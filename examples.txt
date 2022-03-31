@@ -17,7 +17,7 @@ Recursividade
 Ponteiros
 Strings e Runes
 Estruturas
-#Methods
+Métodos
 #Interfaces
 #Embedding
 #Errors
