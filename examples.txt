@@ -18,7 +18,7 @@ Ponteiros
 Strings e Runes
 Estruturas
 Métodos
-#Interfaces
+Interfaces
 #Embedding
 #Errors
 #Goroutines
