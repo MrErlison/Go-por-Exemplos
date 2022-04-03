@@ -1,4 +1,4 @@
-name: Go por Exemplo
+name: Go por Exemplos
 on:
   push:
     branches:
@@ -23,10 +23,10 @@ jobs:
           tools/build
           cp .github/workflows/README.md ./public
           
-      - name: Deploy to gobyexample-ptbr
+      - name: Deploy to goporexemplos
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.ACCESS_TOKEN }}
-          external_repository: gobyexample-ptbr/gobyexample-ptbr.github.io
+          external_repository: goporexemplos/goporexemplos.github.io
           publish_branch: master
           publish_dir: ./public
