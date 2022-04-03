@@ -1,4 +1,4 @@
-# Go por Exemplo
+# Go por Exemplos
 
 Aprenda a programar por meio de exemplos em GO com anotações. Este projeto é um fork do projeto original [Go by Example](https://github.com/mmcgrana/gobyexample). 
 
@@ -61,7 +61,7 @@ Traduções de colaboradores do site Go by Example estão disponíveis em:
 * [French](http://le-go-par-l-exemple.keiruaprod.fr) por [keirua](https://github.com/keirua/gobyexample)
 * [Italian](http://gobyexample.it) pela [Go Italian community](https://github.com/golangit/gobyexample-it)
 * [Japanese](http://spinute.org/go-by-example) por [spinute](https://github.com/spinute)
-* [Portuguese](https://gobyexample-ptbr.github.io) por [Mr. Erlison](https://github.com/gobyexample-ptbr)
+* [Portuguese](https://goporexemplos.github.io) por [Mr. Erlison](https://github.com/MrErlison/goporexemplos/)
 * [Korean](https://mingrammer.com/gobyexample/) por [mingrammer](https://github.com/mingrammer)
 * [Russian](https://gobyexample.com.ru/) por [badkaktus](https://github.com/badkaktus)
 * [Spanish](http://goconejemplos.com) pela [Go Mexico community](https://github.com/dabit/gobyexample)
