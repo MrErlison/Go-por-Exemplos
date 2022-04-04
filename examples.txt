@@ -19,7 +19,7 @@ Strings e Runes
 Estruturas
 Métodos
 Interfaces
-#Embedding
+Incorporando
 #Errors
 #Goroutines
 #Channels
