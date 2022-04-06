@@ -23,7 +23,8 @@ func f1(arg int) (int, error) {
 
 		// `errors.New` constrói um valor básico de erro
 		// com a mensagem de erro fornecida.
-		return -1, errors.New("Não consigo trabalhar com 42")
+		return -1, 
+		      errors.New("Não consigo trabalhar com 42")
 
 	}
 
@@ -52,7 +53,8 @@ func f2(arg int) (int, error) {
 		// Nesse caso, usamos a sintaxe `&argError` para 
 		// construir uma nova estrutura, fornecendo 
 		// valores para os dois campos `arg` e `prob`.
-		return -1, &argError{arg, "Não consigo trabalhar com isso"}
+		return -1, &argError{arg, 
+		          "Não consigo trabalhar com isso"}
 	}
 	return arg + 3, nil
 }
