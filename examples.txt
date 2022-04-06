@@ -21,7 +21,7 @@ Métodos
 Interfaces
 Incorporando
 Erros
-#Goroutines
+Goroutines
 #Channels
 #Channel Buffering
 #Channel Synchronization
