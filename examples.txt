@@ -20,7 +20,7 @@ Estruturas
 Métodos
 Interfaces
 Incorporando
-#Errors
+Erros
 #Goroutines
 #Channels
 #Channel Buffering
