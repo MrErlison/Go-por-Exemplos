@@ -22,7 +22,7 @@ Interfaces
 Incorporando
 Erros
 Goroutines
-#Channels
+Canais
 #Channel Buffering
 #Channel Synchronization
 #Channel Directions
