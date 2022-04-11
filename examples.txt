@@ -23,7 +23,7 @@ Incorporando
 Erros
 Goroutines
 Canais
-#Channel Buffering
+Buffer de canais
 #Channel Synchronization
 #Channel Directions
 #Select
