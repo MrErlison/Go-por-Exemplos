@@ -24,7 +24,7 @@ Erros
 Goroutines
 Canais
 Buffer de canais
-#Channel Synchronization
+Sincronização de canais
 #Channel Directions
 #Select
 #Timeouts
