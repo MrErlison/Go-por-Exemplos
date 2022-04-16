@@ -27,7 +27,7 @@ Buffer de canais
 Sincronização de canais
 Direções do canal
 Select
-#Timeouts
+Timeouts
 #Non-Blocking Channel Operations
 #Closing Channels
 #Range over Channels
