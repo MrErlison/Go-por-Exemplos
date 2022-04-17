@@ -28,7 +28,7 @@ Sincronização de canais
 Direções do canal
 Select
 Timeouts
-#Non-Blocking Channel Operations
+Operações de canal sem bloqueio
 #Closing Channels
 #Range over Channels
 #Timers
