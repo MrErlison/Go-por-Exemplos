@@ -29,7 +29,7 @@ Direções do canal
 Select
 Timeouts
 Operações de canal sem bloqueio
-#Closing Channels
+Fechando canais
 #Range over Channels
 #Timers
 #Tickers
