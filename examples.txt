@@ -30,7 +30,7 @@ Select
 Timeouts
 Operações de canal sem bloqueio
 Fechando canais
-#Range over Channels
+Range over Channels
 #Timers
 #Tickers
 #Worker Pools
