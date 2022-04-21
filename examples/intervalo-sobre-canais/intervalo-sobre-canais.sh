@@ -1,4 +1,4 @@
-$ go run range-over-channels.go
+$ go run intervalo-sobre-canais.go
 um
 dois
 
