@@ -31,7 +31,7 @@ Timeouts
 Operações de canal sem bloqueio
 Fechando canais
 Intervalo sobre canais
-#Timers
+Temporizador
 #Tickers
 #Worker Pools
 #WaitGroups
