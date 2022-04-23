@@ -13,7 +13,7 @@ import "fmt"
 // `!=` operators. This is required for map keys in Go.
 // `V` has the `any` constraint, meaning that it's not
 // restricted in any way (`any` is an alias for `interface{}`).
-func MapKeys(K comparable, V any)(m map[K]V) []K {
+func MapKeys[K comparable, V any](m map[K]V) []K {
 	r := make([]K, 0, len(m))
 	for k := range m {
 		r = append(r, k)
