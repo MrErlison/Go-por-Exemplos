@@ -33,7 +33,7 @@ Operações de canal sem bloqueio
 Fechando canais
 Intervalo sobre canais
 Temporizador
-#Tickers
+Tickers
 #Worker Pools
 #WaitGroups
 #Rate Limiting
