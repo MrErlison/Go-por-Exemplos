@@ -3,7 +3,6 @@
 # 2 segundos, apesar de fazer cerca de 5 segundos de
 # trabalho total, porque há 3 trabalhos operando 
 # simultaneamente.
-
 $ time go run fila-de-trabalhos.go 
 worker 1 started  job 1
 worker 2 started  job 2
