@@ -34,7 +34,7 @@ Fechando canais
 Intervalo sobre canais
 Temporizador
 Tickers
-#Worker Pools
+Fila de trabalhos
 #WaitGroups
 #Rate Limiting
 #Atomic Counters
