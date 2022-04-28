@@ -1,6 +1,5 @@
-// To wait for multiple goroutines to finish, we can
-// use a *wait group*.
-
+// Para esperar que várias goroutines terminem, podemos
+// usar um grupo de espera (*wait group*).
 package main
 
 import (
@@ -9,47 +8,49 @@ import (
 	"time"
 )
 
-// This is the function we'll run in every goroutine.
+// Esta é a função que executaremos em todas as goroutine.
 func worker(id int) {
 	fmt.Printf("Worker %d starting\n", id)
 
-	// Sleep to simulate an expensive task.
+	// Aqui o `Sleep` serve para simular uma tarefa
+	// mais demorada.
 	time.Sleep(time.Second)
 	fmt.Printf("Worker %d done\n", id)
 }
 
 func main() {
 
-	// This WaitGroup is used to wait for all the
-	// goroutines launched here to finish. Note: if a WaitGroup is
-	// explicitly passed into functions, it should be done *by pointer*.
+	// Esse `WaitGroup` é usado para esperar que todas as 
+	// goroutines inicadas aqui terminem. 
+	// Se um WaitGroup` for explicitamente passado para 
+	// funções, isso deve ser feito usando ponteiro.
 	var wg sync.WaitGroup
 
-	// Launch several goroutines and increment the WaitGroup
-	// counter for each.
+	// Inicie várias goroutines e aumente o contador
+	// `WaitGroup` para cada uma.
 	for i := 1; i <= 5; i++ {
 		wg.Add(1)
-		// Avoid re-use of the same `i` value in each goroutine closure.
-		// See [the FAQ](https://golang.org/doc/faq#closures_and_goroutines)
-		// for more details.
+
+		// Evite a reutilização do mesmo valor `i` em
+		// cada goroutine `closure`. Consulte o [FAQ](https://golang.org/doc/faq#closures_and_goroutines) 
+		// para mais detalhes.
 		i := i
 
-		// Wrap the worker call in a closure that makes sure to tell
-		// the WaitGroup that this worker is done. This way the worker
-		// itself does not have to be aware of the concurrency primitives
-		// involved in its execution.
+		// Envolva a chamada do `worker` no `closure` e certifique
+		// de dizer ao `WaitGroup` que o `worker` está pronto. 
+		// Dessa forma, o próprio `worker` não precisa
+		// saber das concorrência envolvidas em sua execução.
 		go func() {
 			defer wg.Done()
 			worker(i)
 		}()
 	}
 
-	// Block until the WaitGroup counter goes back to 0;
-	// all the workers notified they're done.
+	// Bloqueie até que o contador `WaitGroup` volte para 0;
+	// todos os `worker` notifiquem que terminaram.
 	wg.Wait()
 
-	// Note that this approach has no straightforward way
-	// to propagate errors from workers. For more
-	// advanced use cases, consider using the
-	// [errgroup package](https://pkg.go.dev/golang.org/x/sync/errgroup).
+	// Observe que essa abordagem não tem uma maneira direta
+	// de propagar os erros dos `worker`. Para casos de mais 
+	// avançados, considere usar o [pacote errgroup](https://pkg.go.dev/golang.org/x/sync/errgroup).
 }

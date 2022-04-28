@@ -1,14 +1,14 @@
 $ go run waitgroups.go
-Worker 5 starting
-Worker 3 starting
-Worker 4 starting
-Worker 1 starting
-Worker 2 starting
-Worker 4 done
-Worker 1 done
-Worker 2 done
-Worker 5 done
-Worker 3 done
+Worker 5 iniciando
+Worker 3 iniciando
+Worker 4 iniciando
+Worker 1 iniciando
+Worker 2 iniciando
+Worker 4 concluido
+Worker 1 concluido
+Worker 2 concluido
+Worker 5 concluido
+Worker 3 concluido
 
-# The order of workers starting up and finishing
-# is likely to be different for each invocation.
+# A ordem dos workers começa e termina
+# de forma diferente para cada chamada.

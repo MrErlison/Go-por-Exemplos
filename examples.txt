@@ -35,7 +35,7 @@ Intervalo sobre canais
 Temporizador
 Tickers
 Fila de trabalhos
-#WaitGroups
+WaitGroups
 #Rate Limiting
 #Atomic Counters
 #Mutexes
