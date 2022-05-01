@@ -20,7 +20,7 @@ Estruturas
 Métodos
 Interfaces
 Incorporando
-#Generics
+Generics
 Erros
 Goroutines
 Canais
