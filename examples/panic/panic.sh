@@ -3,9 +3,9 @@
 # e saia com um status diferente de zero.
 
 # Quando entra em falha pela primeira vez, o programa sai
-# sem atingir o resto do código. Se você quiser ver o programa
-# tentar criar um arquivo temporário, comente o primeiro 
-# `panic`.
+# sem atingir o resto do código. Se você quiser ver o 
+# programa tentar criar um arquivo temporário, comente o
+# primeiro `panic`.
 $ go run panic.go
 panic: um problema
 
