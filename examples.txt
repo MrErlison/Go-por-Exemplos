@@ -42,7 +42,7 @@ WaitGroups
 #Stateful Goroutines
 #Sorting
 #Sorting by Functions
-#Panic
+Panic
 #Defer
 #Recover
 #Collection Functions
