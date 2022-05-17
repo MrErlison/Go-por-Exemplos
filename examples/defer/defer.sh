@@ -1,6 +1,6 @@
-# Running the program confirms that the file is closed
-# after being written.
+# A execução do programa confirma que o arquivo foi 
+# fechado depois de ser gravado.
 $ go run defer.go
-creating
-writing
-closing
+criando
+escrevendo
+fechando

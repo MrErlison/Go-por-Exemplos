@@ -43,7 +43,7 @@ WaitGroups
 #Sorting
 #Sorting by Functions
 Panic
-#Defer
+Defer
 #Recover
 #Collection Functions
 #String Functions
