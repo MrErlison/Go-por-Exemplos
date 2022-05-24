@@ -62,7 +62,7 @@ Defer
 #SHA256 Hashes
 #Base64 Encoding
 #Reading Files
-#Writing Files
+Escrevendo arquivos
 #Line Filters
 #File Paths
 #Directories
