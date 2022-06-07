@@ -44,7 +44,7 @@ WaitGroups
 #Sorting by Functions
 Panic
 Defer
-#Recover
+Recover
 #Collection Functions
 #String Functions
 #String Formatting
@@ -52,7 +52,7 @@ Defer
 #Regular Expressions
 #JSON
 #XML
-#Time
+Time
 #Epoch
 #Time Formatting / Parsing
 #Random Numbers
