@@ -18,16 +18,16 @@ func main() {
 	// string em questão como o primeiro argumento para a função.
 	// Você pode encontrar mais funções nos documentos do pacote
 	// strings.
-	p("Contains:  ", s.Contains("test", "es"))
-	p("Count:     ", s.Count("test", "t"))
-	p("HasPrefix: ", s.HasPrefix("test", "te"))
-	p("HasSuffix: ", s.HasSuffix("test", "st"))
-	p("Index:     ", s.Index("test", "e"))
-	p("Join:      ", s.Join([]string{"a", "b"}, "-"))
-	p("Repeat:    ", s.Repeat("a", 5))
-	p("Replace:   ", s.Replace("foo", "o", "0", -1))
-	p("Replace:   ", s.Replace("foo", "o", "0", 1))
-	p("Split:     ", s.Split("a-b-c-d-e", "-"))
-	p("ToLower:   ", s.ToLower("TEST"))
-	p("ToUpper:   ", s.ToUpper("test"))
+	p("Contem:    ", s.Contains("test", "es"))
+	p("Conta:     ", s.Count("test", "t"))
+	p("É Prefixo: ", s.HasPrefix("test", "te"))
+	p("É Sufixo:  ", s.HasSuffix("test", "st"))
+	p("Índice:    ", s.Index("test", "e"))
+	p("Concatena: ", s.Join([]string{"a", "b"}, "-"))
+	p("Repete:    ", s.Repeat("a", 5))
+	p("Substitui: ", s.Replace("foo", "o", "0", -1))
+	p("Substitui: ", s.Replace("foo", "o", "0", 1))
+	p("Separa:    ", s.Split("a-b-c-d-e", "-"))
+	p("Minúscula: ", s.ToLower("TEST"))
+	p("Maiúscula: ", s.ToUpper("test"))
 }
