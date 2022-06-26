@@ -46,7 +46,7 @@ Panic
 Defer
 Recover
 #Collection Functions
-#String Functions
+Funções de String
 #String Formatting
 #Text Templates
 #Regular Expressions

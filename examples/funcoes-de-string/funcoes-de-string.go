@@ -1,6 +1,6 @@
-// The standard library's `strings` package provides many
-// useful string-related functions. Here are some examples
-// to give you a sense of the package.
+// A biblioteca padrão de strings  fornece muitas funções
+// úteis relacionadas a strings. Aqui estão alguns 
+// exemplos para lhe dar uma noção do pacote.
 
 package main
 
@@ -9,19 +9,15 @@ import (
 	s "strings"
 )
 
-// We alias `fmt.Println` to a shorter name as we'll use
-// it a lot below.
 var p = fmt.Println
 
 func main() {
 
-	// Here's a sample of the functions available in
-	// `strings`. Since these are functions from the
-	// package, not methods on the string object itself,
-	// we need pass the string in question as the first
-	// argument to the function. You can find more
-	// functions in the [`strings`](http://golang.org/pkg/strings/)
-	// package docs.
+	// Aqui está um exemplo das funções disponíveis em `strings`.
+	// Como essas são funções do pacote, nós precisamos passar a 
+	// string em questão como o primeiro argumento para a função.
+	// Você pode encontrar mais funções nos documentos do pacote
+	// strings.
 	p("Contains:  ", s.Contains("test", "es"))
 	p("Count:     ", s.Count("test", "t"))
 	p("HasPrefix: ", s.HasPrefix("test", "te"))

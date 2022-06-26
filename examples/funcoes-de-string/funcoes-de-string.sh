@@ -1,4 +1,4 @@
-$ go run string-functions.go
+$ go run funcoes-de-string.go
 Contains:   true
 Count:      2
 HasPrefix:  true
