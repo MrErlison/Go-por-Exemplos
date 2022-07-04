@@ -14,7 +14,7 @@ func main() {
 
 	// Solicita HTTP GET para um servidor. `http.Get` é
 	// um atalho conveniente para criar um objeto
-	//`http.Client` e chamar seu método `Get`; ele usa 
+	// `http.Client` e chamar seu método `Get`; ele usa 
 	// o objeto `http.DefaultClient`, que possui 
 	// padrões de configurações úteis.
 	resp, err := http.Get("http://goporexemplos.github.io/")
