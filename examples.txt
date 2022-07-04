@@ -72,7 +72,7 @@ Escrevendo arquivos
 #Command-Line Flags
 #Command-Line Subcommands
 #Environment Variables
-#HTTP Clients
+Clientes HTTP
 #HTTP Servers
 #Context
 #Spawning Processes
