@@ -36,7 +36,7 @@ Temporizador
 Tickers
 Fila de trabalhos
 WaitGroups
-#Rate Limiting
+Limitando a taxa
 #Atomic Counters
 #Mutexes
 #Stateful Goroutines
