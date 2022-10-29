@@ -37,7 +37,7 @@ Tickers
 Fila de trabalhos
 WaitGroups
 Limitando a taxa
-#Atomic Counters
+Contadores atômicos
 #Mutexes
 #Stateful Goroutines
 #Sorting
