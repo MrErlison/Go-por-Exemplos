@@ -4,13 +4,13 @@ Aprenda a programar por meio de exemplos em GO com anotações. Este projeto é 
 
 # Panorama geral
 
-O site [Go por Exemplo](gobyexample-ptbr.github.io) é construído extraindo código e comentários de arquivos exemplos e renderizando-os através dos `templates` no diretório estático `public`. Os programas que implementam esse processo de compilação estão na pasta `tools`, juntamente com dependências especificadas no arquivo `go.mod`.
+O site [Go por Exemplo](https://goporexemplos.github.io/) é construído extraindo código e comentários de arquivos exemplos e renderizando-os através dos `templates` no diretório estático `public`. Os programas que implementam esse processo de compilação estão na pasta `tools`, juntamente com dependências especificadas no arquivo `go.mod`.
 
 O diretório `public` construído pode ser disponibilizado por qualquer sistema de conteúdo estático. O local de produção usa S3 e CloudFront, por exemplo.
 
 ### Construindo
 
-[![Build Status](https://github.com/mmcgrana/gobyexample/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/mmcgrana/gobyexample/actions)
+[![Build Status](https://github.com/MrErlison/Go-por-Exemplos/actions/workflows/go.yml/badge.svg?branch=master)](https://github.com/MrErlison/Go-por-Exemplos/actions)
 
 Para construir seu site você vai precisar do Go instalado. Execute:
 
