@@ -29,6 +29,5 @@ func main() {
 		fmt.Println(num, "tem múltiplos dígitos")
 	}
 }
-
 // Observe que você não precisa de parênteses para as
 // condições em GO, mas que as chaves são necessárias.

@@ -23,7 +23,6 @@ func main() {
 	// As variáveis declaradas sem uma inicialização
 	// correspondente terão _valor zero_. Por exemplo,
 	// o valor zero para um `int` é `0`.
-
 	var e int
 	fmt.Println(e)
 

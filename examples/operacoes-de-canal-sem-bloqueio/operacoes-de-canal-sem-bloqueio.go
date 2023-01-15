@@ -2,6 +2,7 @@
 // bloqueados. No entanto, podemos usar `select` com uma
 // cláusula `default` para implementar envios, recebimentos
 // e até mesmo seleções multidirecionais sem bloqueio.
+
 package main
 
 import "fmt"

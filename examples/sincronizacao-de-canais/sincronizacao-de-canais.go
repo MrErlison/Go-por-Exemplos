@@ -1,8 +1,9 @@
 // Podemos usar canais para sincronizar a execução entre
-// goroutines. Aqui está um exemplo de como usar um 
+// goroutines. Aqui está um exemplo de como usar um
 // recebimento de bloqueio para esperar que uma goroutine
-// termine. Ao esperar que várias goroutines terminem, 
+// termine. Ao esperar que várias goroutines terminem,
 // você pode preferir usar um [WaitGroup](waitgroups).
+
 package main
 
 import (
@@ -11,7 +12,7 @@ import (
 )
 
 // Esta é a função que executaremos em uma goroutine.
-// O canal `done` será usado para notificar outra 
+// O canal `done` será usado para notificar outra
 // goroutine de que o trabalho desta função está feito.
 func worker(done chan bool) {
 	fmt.Print("trabalhando...")
@@ -24,7 +25,7 @@ func worker(done chan bool) {
 
 func main() {
 
-	// Inicie uma goroutine `worker`, dando a ele o 
+	// Inicie uma goroutine `worker`, dando a ele o
 	// canal para notificar.
 	done := make(chan bool, 1)
 	go worker(done)

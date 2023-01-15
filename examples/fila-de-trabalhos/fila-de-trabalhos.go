@@ -1,5 +1,6 @@
 // Neste exemplo, veremos como implementar uma fila
 // de trabalhas usando goroutines e canais.
+
 package main
 
 import (
@@ -7,8 +8,8 @@ import (
 	"time"
 )
 
-// Aqui está o `worker`, do qual executaremos várias 
-// instâncias simultâneas. Esses worker receberão 
+// Aqui está o `worker`, do qual executaremos várias
+// instâncias simultâneas. Esses worker receberão
 // trabalho no canal `jobs` e enviarão os resultados
 // correspondentes em `results`. Aguardaremos um segundo
 // por trabalho para simular uma tarefa dispendiosa.
@@ -23,7 +24,7 @@ func worker(id int, jobs <-chan int, results chan<- int) {
 
 func main() {
 
-	// Para usar nosso grupo de `workers`, precisamos 
+	// Para usar nosso grupo de `workers`, precisamos
 	// enviar o trabalho e coletar seus resultados. Criamos
 	// 2 canais para isso.
 	const numJobs = 5
@@ -36,7 +37,7 @@ func main() {
 		go worker(w, jobs, results)
 	}
 
-	// Aqui enviamos 5 `jobs` e depois fechamos esse 
+	// Aqui enviamos 5 `jobs` e depois fechamos esse
 	// canal para indicar que esse é todo o trabalho
 	// que temos.
 	for j := 1; j <= numJobs; j++ {
@@ -52,4 +53,3 @@ func main() {
 		<-results
 	}
 }
-

@@ -1,5 +1,6 @@
 // Para esperar que várias goroutines terminem, podemos
 // usar um grupo de espera (*wait group*).
+
 package main
 
 import (
@@ -20,9 +21,9 @@ func worker(id int) {
 
 func main() {
 
-	// Esse `WaitGroup` é usado para esperar que todas as 
-	// goroutines inicadas aqui terminem. 
-	// Se um WaitGroup` for explicitamente passado para 
+	// Esse `WaitGroup` é usado para esperar que todas as
+	// goroutines inicadas aqui terminem.
+	// Se um WaitGroup` for explicitamente passado para
 	// funções, isso deve ser feito usando ponteiro.
 	var wg sync.WaitGroup
 
@@ -32,12 +33,12 @@ func main() {
 		wg.Add(1)
 
 		// Evite a reutilização do mesmo valor `i` em
-		// cada goroutine `closure`. Consulte o [FAQ](https://golang.org/doc/faq#closures_and_goroutines) 
+		// cada goroutine `closure`. Consulte o [FAQ](https://golang.org/doc/faq#closures_and_goroutines)
 		// para mais detalhes.
 		i := i
 
 		// Envolva a chamada do `worker` no `closure` e certifique
-		// de dizer ao `WaitGroup` que o `worker` está pronto. 
+		// de dizer ao `WaitGroup` que o `worker` está pronto.
 		// Dessa forma, o próprio `worker` não precisa
 		// saber das concorrência envolvidas em sua execução.
 		go func() {
@@ -51,6 +52,6 @@ func main() {
 	wg.Wait()
 
 	// Observe que essa abordagem não tem uma maneira direta
-	// de propagar os erros dos `worker`. Para casos de mais 
+	// de propagar os erros dos `worker`. Para casos de mais
 	// avançados, considere usar o [pacote errgroup](https://pkg.go.dev/golang.org/x/sync/errgroup).
 }

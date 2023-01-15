@@ -1,6 +1,7 @@
 // Fechar um canal indica que não serão enviados mais
-// valores nele. Isso pode ser útil para comunicar a 
+// valores nele. Isso pode ser útil para comunicar a
 // conclusão aos receptores do canal.
+
 package main
 
 import "fmt"
@@ -13,11 +14,11 @@ func main() {
 	jobs := make(chan int, 5)
 	done := make(chan bool)
 
-	// Aqui está a goroutine do `worker`. Ela recebe 
-	// repetidamente `jobs` com `j, more := <-jobs`. 
+	// Aqui está a goroutine do `worker`. Ela recebe
+	// repetidamente `jobs` com `j, more := <-jobs`.
 	// Nesta forma especial de recebimento de `2-value`,
 	// `more` será falso se os `jobs` tiverem sido fechados
-	// e todos os valores no canal já tiverem 
+	// e todos os valores no canal já tiverem
 	// sido recebidos. Usamos isso para notificar com `done`
 	// em todos os nossos `jobs`.
 	go func() {
@@ -42,7 +43,7 @@ func main() {
 	close(jobs)
 	fmt.Println("sent all jobs")
 
-	// Aguardamos o `worker` usando a abordagem de 
+	// Aguardamos o `worker` usando a abordagem de
 	// sincronização que vimos anteriormente.
 	<-done
 }

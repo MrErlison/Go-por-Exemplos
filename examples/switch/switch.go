@@ -48,7 +48,6 @@ func main() {
 	// Você pode usar isso para descobrir o tipo de valor
 	// de uma interface. No exemplo, a variável `t` terá
 	// o tipo correspondente à sua cláusula.
-
 	whatAmI := func(i interface{}) {
 		switch t := i.(type) {
 		case bool:

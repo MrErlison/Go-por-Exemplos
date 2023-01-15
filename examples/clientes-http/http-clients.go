@@ -1,7 +1,8 @@
-// A biblioteca padrão do Go vem com um excelente 
-// suporte para clientes e servidores HTTP no 
+// A biblioteca padrão do Go vem com um excelente
+// suporte para clientes e servidores HTTP no
 // pacote `net/http`. Nesse exemplo, vamos usá-lo
 // para simples requisições HTTP.
+
 package main
 
 import (
@@ -14,8 +15,8 @@ func main() {
 
 	// Solicita HTTP GET para um servidor. `http.Get` é
 	// um atalho conveniente para criar um objeto
-	// `http.Client` e chamar seu método `Get`; ele usa 
-	// o objeto `http.DefaultClient`, que possui 
+	// `http.Client` e chamar seu método `Get`; ele usa
+	// o objeto `http.DefaultClient`, que possui
 	// padrões de configurações úteis.
 	resp, err := http.Get("http://goporexemplos.github.io/")
 	if err != nil {
